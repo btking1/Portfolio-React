@@ -6,7 +6,7 @@ import App from "./App";
 
 WebFont.load({
   google: {
-    families: ["roboto:,200,300,400", "JetBrains Mono:,700", "Dosis:500,700", "Inter:400,500,600,700", "Montserrat:200,300,400,500"],
+    families: ["roboto:,200,300,400", "JetBrains Mono:100,200,300,400,500,600,700", "Dosis:100,200,300,400,500,700", "Inter:400,500,600,700", "Montserrat:200,300,400,500"],
   },
 });
 

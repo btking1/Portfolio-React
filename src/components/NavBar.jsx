@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { Container } from "@material-ui/core";
 
 function NavBar() {
   const Nav = styled.div`
@@ -9,25 +10,7 @@ function NavBar() {
     flex-direction: row;
     justify-content: space-between;
     z-index: 5;
-    margin-bottom: 3%;
     padding: 1%;
-    // make the navbar fixed to the top
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    // make the navbar stick to the top
-    @media (max-width: 600px) {
-      position: static;
-      background-color: transparent;
-      box-shadow: none;
-      border-bottom: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    }
   `;
   const Logo = styled.div`
     font-size: 24px;
@@ -59,7 +42,24 @@ function NavBar() {
   `;
 
   return (
-    <>
+    <Container
+      maxWidth="xl"
+      sx={{
+        display: "flex",
+        marginBottom: "2%",
+     
+        // [`@media (min-width: ${600}px)`]: {
+        //   position: 'static',
+        //   backgroundColor: 'black',
+        //   boxShadow: 'none',
+        //   borderBottom: "none",
+        //   position: "fixed",
+        //   top: "0",
+        //   left: "0",
+        //   boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        // },
+      }}
+    >
       <Nav>
         <NavLink key="5" to="/">
           <Logo>BK : DEV</Logo>
@@ -93,7 +93,7 @@ function NavBar() {
           ))}
         </Links>
       </Nav>
-    </>
+    </Container>
   );
 }
 

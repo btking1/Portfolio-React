@@ -14,7 +14,8 @@ const Contact = () => {
         alignItems: "center",
         maxWidth: "600px",
         margin: "0 auto",
-        marginBottom: "20px",
+        marginTop: "6%",
+        marginBottom: "15%",
         padding: "0px",
       }}
     >

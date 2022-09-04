@@ -1,7 +1,8 @@
 import React from "react";
-import "./index.css";
+// import "./index.css";
 import { Container, Grid } from "@mui/material";
 import StyledCard from "../../components/Card";
+import ViewOptions from "../../components/viewOptions";
 const projects = [
   {
     title: "Image AI",
@@ -72,15 +73,33 @@ makeKey();
 
 function Works() {
   return (
+    <>
+    
     <Container sx={{
-      // display: "flex",
-      // justifyContent: "center",
-      // alignItems: "center",
-      marginTop: "2%",
+      marginTop: "5%",
       marginBottom: "5%",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
     }} maxWidth='lg'>
 
-    <Grid container spacing={5} rowSpacing={4} direction="row" display="flex">
+    <Grid container spacing={2} rowSpacing={4} direction="row" sx={{display:"flex",
+    width: "100%",
+    // makecardsbigger
+    maxWidth: "100%",
+    // makecontainerresponsive
+    maxHeight: "100%",
+    // makecontainerresponsive
+    //  stop card movement from disrupting other components
+    // use webkit to stop card movement
+//    transdrom to material transform: scaleY(2);
+
+  
+
+
+
+
+  }}>
       {projects.map((project, key) => (
         <Grid item key={key} sm={12} md={6} lg={4} xl={4}>
           <StyledCard
@@ -96,6 +115,7 @@ function Works() {
       ))}
     </Grid>
     </Container>
+    </>
   );
 }
 

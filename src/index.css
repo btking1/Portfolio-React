@@ -12,6 +12,12 @@ body{
   background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat;
+  /* overflow: hidden;  */
+  background-position: cover;
+  background-attachment: fixed;
+  background-blend-mode:color-dodge; 
+   object-fit: cover; 
+  background-clip: content-box; 
   z-index: -6;
 }
 /* img{
@@ -21,7 +27,7 @@ body{
 
 /* Nav */
 .active {
-  color: rgba(237,215,103);
+  color: rgba(237,215,103,.75);
 }
 a {
   text-decoration: none;

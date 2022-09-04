@@ -9,6 +9,7 @@ import {
   IconButton,
 } from "@mui/material";
 
+
 // styled mui card
 const StyledCard = (props) => {
   return (
@@ -17,6 +18,8 @@ const StyledCard = (props) => {
       style={{
         // marginBottom: "2rem",
         backgroundColor: "rgba(204, 232, 247, 0.75)",
+        backdropFilter: "blur(6px)",
+        // make cards wider
       }}
     />
   );
@@ -32,7 +35,12 @@ export default function CardComponent(props) {
   const handleMouseLeave = () => {
     setHover(false);
   };
+  function displayViewOption() {
 
+  }
+  function hideViewOption() {
+
+  }
   return (
     <StyledCard onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <CardHeader
@@ -56,7 +64,7 @@ export default function CardComponent(props) {
         subheader={
           <Typography
             sx={{
-              // make color see thru
+          
               color: "rgba(0, 0, 0, 0.54)",
               display: "flex",
               justifyContent: "flex-end",
@@ -69,26 +77,33 @@ export default function CardComponent(props) {
         action={
           <IconButton
             onClick={() => window.open(props.github)}
-            // href={props.github}
-            // target="_blank"
-            // rel="noopener noreferrer"
+          
           >
             <GitHub />
           </IconButton>
         }
       />
+      
       <CardMedia
         component="img"
         height={hover ? "250px" : "200px"}
         width={hover ? "300px" : "200px"}
+        onMouseEnter={displayViewOption()}
+        onMouseLeave={hideViewOption()}
         onClick={() => window.open(props.appLink)}
         sx={{
           overflow: "hidden",
-          backgroundPosition: "cover",
+          // backgroundPosition: "cover",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+          // backgroundBlendMode: "multiply",
           objectFit: "cover",
           backgroundClip: "content-box",
           transition: "all 0.5s ease",
-          // on hover make pointer
+          // prevent animation from affectingother elements     
+          
           "&:hover": {
             cursor: "pointer",
           },
