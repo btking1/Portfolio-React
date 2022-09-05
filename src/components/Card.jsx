@@ -9,17 +9,14 @@ import {
   IconButton,
 } from "@mui/material";
 
-
 // styled mui card
 const StyledCard = (props) => {
   return (
     <Card
       {...props}
       style={{
-        // marginBottom: "2rem",
         backgroundColor: "rgba(204, 232, 247, 0.75)",
         backdropFilter: "blur(6px)",
-        // make cards wider
       }}
     />
   );
@@ -35,17 +32,12 @@ export default function CardComponent(props) {
   const handleMouseLeave = () => {
     setHover(false);
   };
-  function displayViewOption() {
-
-  }
-  function hideViewOption() {
-
-  }
+  function displayViewOption() {}
+  function hideViewOption() {}
   return (
     <StyledCard onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <CardHeader
         sx={{
-          // margin: "2%",
           maxHeight: "40rem",
           lineHeight: "2.5rem",
         }}
@@ -64,7 +56,6 @@ export default function CardComponent(props) {
         subheader={
           <Typography
             sx={{
-          
               color: "rgba(0, 0, 0, 0.54)",
               display: "flex",
               justifyContent: "flex-end",
@@ -75,15 +66,12 @@ export default function CardComponent(props) {
           </Typography>
         }
         action={
-          <IconButton
-            onClick={() => window.open(props.github)}
-          
-          >
+          <IconButton onClick={() => window.open(props.github)}>
             <GitHub />
           </IconButton>
         }
       />
-      
+
       <CardMedia
         component="img"
         height={hover ? "250px" : "200px"}
@@ -93,17 +81,14 @@ export default function CardComponent(props) {
         onClick={() => window.open(props.appLink)}
         sx={{
           overflow: "hidden",
-          // backgroundPosition: "cover",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
-          // backgroundBlendMode: "multiply",
           objectFit: "cover",
           backgroundClip: "content-box",
           transition: "all 0.5s ease",
-          // prevent animation from affectingother elements     
-          
+
           "&:hover": {
             cursor: "pointer",
           },

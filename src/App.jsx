@@ -15,6 +15,7 @@ const theme = createTheme({
     mode: "light",
     primary: {
       main: "rgba(204, 232, 247, 0.75)",
+      other: "rgba(204, 232, 247, 1)",
       lightGreenText: "rgba(196,224,228,1)",
     },
     secondary: {
@@ -56,9 +57,6 @@ const theme = createTheme({
     p: {
       fontFamily: "inter",
     },
-    // subtitle1: {
-    //   fontFamily: "jetbrains mono",
-    // }
   },
 });
 function App() {

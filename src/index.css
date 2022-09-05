@@ -1,41 +1,43 @@
-/* html{
-  padding: 0;
-  margin: 0;
-} */
-
-
-body{
+body {
   /* max-height:fit-content;
   min-width:1000px;
   max-width: 1200px;  */
   background-image: url(../src/assets/bgc-contact/Vorderrhein.svg);
-  background-position: center; 
-  background-size: cover; 
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   /* overflow: hidden;  */
   background-position: cover;
   background-attachment: fixed;
-  background-blend-mode:color-dodge; 
-   object-fit: cover; 
-  background-clip: content-box; 
+  background-blend-mode: color-dodge;
+  object-fit: cover;
+  background-clip: content-box;
   z-index: -6;
 }
-/* img{
-  max-width: 200px;
-  max-height: 200px;
-} */
 
 /* Nav */
 .active {
-  color: rgba(237,215,103,.75);
+  color: rgba(237, 215, 103, 0.75);
 }
 a {
   text-decoration: none;
   color: black;
 }
 
-.avatar{
+.avatar {
   width: 55vh;
   height: 58vh;
 }
-/* no image clipping */
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+/* li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+} */

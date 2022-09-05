@@ -95,7 +95,6 @@ function Home() {
             display: "flex",
             justifyContent: "flex-end",
             padding: "1.5%",
-            // bold text  shadow
             textShadow: "1px 1px rgba(0, 0, 0, 0.5)",
           }}
         >

@@ -7,34 +7,7 @@ const useStyle = makeStyles({
   mainPage: {
     margin: "0 auto",
     padding: "0px",
-    width: "100%",
-    maxWidth: 'fit-content',
-    minHeight: "fit-content",
-
-// make responsive main page
-
-// minHeight: "100vh",
-display: "flex",
-flexDirection: "column",
-justifyContent: "center",
-alignItems: "center",
-    // flexDirection: "column",
-    // alignItems: "center",
-    // justifyContent: "center",
-
-
-
-
-
-    // backgroundColor: "rgba(204, 232, 247, 0.75)",
-
-
-    // marginBottom: "20px",
-    // minWidth: "100vh",
-    // margin: "0 auto",
-    // padding: "0px",
-    // justifyContent: "center",
-    // alignItems: "center",
+    display: "flex",
   },
 });
 
@@ -44,7 +17,7 @@ export default function Layout({ children }) {
     <>
       <NavBar />
       <div className={classes.mainPage}>{children}</div>
-      <Footer />    
+      <Footer />
     </>
   );
 }

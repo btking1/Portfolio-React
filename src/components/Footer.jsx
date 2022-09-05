@@ -15,7 +15,6 @@ function Footer() {
       maxWidth="xl"
       sx={{
         marginTop: "20px",
-        //    border: "1px solid black",
         display: "flex",
         flexDirection: "row",
         justifyContent: "flex-end",
@@ -39,7 +38,6 @@ function Footer() {
           minHeight: "5vh",
           maxWidth: "30vw",
           padding: "5px",
-          // border: "1px solid #e0e0e0",
         }}
       >
         <Typography
@@ -59,21 +57,21 @@ function Footer() {
             display: "flex",
           }}
         >
-          <Button
+          <Button onClick={() => window.open("https://github.com/btking1")}
             sx={{
               transition: "all 0.5s ease-in-out",
               "&:hover": {
-                backgroundColor: "rgba(204, 232, 247, 0.75)",
+                color: "rgba(204, 232, 247, 0.75)",
               },
             }}
           >
             <GitHub />
           </Button>
-          <Button
+          <Button onClick={() => window.open("https://www.linkedin.com/in/booker-king-42493a247/")}
             sx={{
               transition: "all 0.5s ease-in-out",
               "&:hover": {
-                backgroundColor: "rgba(204, 232, 247, 0.75)",
+                color: "rgba(204, 232, 247, 0.75)",
               },
             }}
           >
