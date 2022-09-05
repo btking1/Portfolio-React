@@ -47,7 +47,7 @@ investment dashboard portfolio, and a tech blog.
 
 <br/>
 
-![Porfolio](https://btking1.github.io/Portfolio-React/)
+[Porfolio](https://btking1.github.io/Portfolio-React/)
 
 
 
