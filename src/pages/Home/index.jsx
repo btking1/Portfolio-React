@@ -1,4 +1,4 @@
-import { Typography, Box, Container, rgbToHex } from "@mui/material";
+import { Typography, Box, Container} from "@mui/material";
 import React from "react";
 import { cyan, yellow, blue } from "@mui/material/colors";
 
@@ -28,7 +28,6 @@ function Home() {
           padding: "5%",
           width: "fit-content",
           alignContent: "center",
-          padding: "10px",
         }}
       >
         <Typography

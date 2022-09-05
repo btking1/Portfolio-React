@@ -1,7 +1,10 @@
 import React from "react";
 import { Grid, Box, Typography, Button, Container } from "@mui/material";
 
-function Resume() {
+// const viewResume = (image) => {
+//   const [open, setOpen] = useState(false);
+// }
+function Resume() { 
   return (
     <Container
       sx={{
@@ -99,13 +102,15 @@ function Resume() {
               marginTop: "10px",
               padding: "20px",
             }}
+            // onClick={viewResume}
           >
             View Resume
           </Button>
-        </Grid>
+    /     </Grid>
       </Grid>
     </Container>
-  );
+  )
 }
+
 
 export default Resume;

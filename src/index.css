@@ -1,8 +1,6 @@
 body {
-  /* max-height:fit-content;
-  min-width:1000px;
-  max-width: 1200px;  */
-  background-image: url(../src/assets/bgc-contact/Vorderrhein.svg);
+background-image: url(../public/assets/bgc-contact/vorderrhein.svg);
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Box, Typography } from "@mui/material";
+import avatar from "../../../public/assets/avatar.png";
 
 function About() {
   return (
@@ -38,7 +39,7 @@ function About() {
             maxHeight: "60vh",
           }}
         >
-          <img className="avatar" src={`/src/assets/avatar.png`} />
+          <img className="avatar" alt='avatar' src={avatar} />
         </Box>
         <Box
           sx={{

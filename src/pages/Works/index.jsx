@@ -2,7 +2,13 @@ import React from "react";
 // import "./index.css";
 import { Container, Grid } from "@mui/material";
 import StyledCard from "../../components/Card";
-import ViewOptions from "../../components/viewOptions";
+import imaginai from "../../../src/projects/imagineai.svg";
+import ipd from "../../../src/projects/ipd.svg";
+import notetaker from "../../../src/projects/notesonline.svg";
+import photoport from "../../../src/projects/photography.svg";
+import teamdash from "../../../src/projects/teamdash.svg";
+import techblog from "../../../src/projects/techblog.svg";
+
 const projects = [
   {
     title: "Image AI",
@@ -10,8 +16,9 @@ const projects = [
     description:
       "Image AI is a web application that uses machine learning to classify images of animals and objects.",
     github: `https://github.com/FredElick/project-2`,
-    image: "/src/assets/projects/imagineAi.svg",
+    image: imaginai,
   },
+
   {
     title: "Investment Dashboard",
     subheader: "HTML, CSS, JS",
@@ -19,7 +26,7 @@ const projects = [
       "Online investment dashboard that allows users to manage their stock portfolios.",
     appLink: `https://cpm-128.github.io/investment-portfolio-dashboard/`,
     github: "https://github.com/cpm-128/investment-portfolio-dashboard",
-    image: "/src/assets/projects/ipd.svg",
+    image: ipd,
   },
   {
     title: "Note Taker",
@@ -28,14 +35,14 @@ const projects = [
       "A web application that allows users to create, edit, and delete notes.",
     appLink: "https://notesmonline.herokuapp.com/",
     github: "https://github.com/btking1/notesOnline",
-    image: `/src/assets/projects/notesonline.svg`,
+    image: notetaker,
   },
   {
     title: "Photo Portfolio",
     subheader: "React, CSS, JS, Node",
     description: "Demo portfolio for photographer.",
     github: "https://github.com/btking1/Photography-Portfolio",
-    image: `/src/assets/projects/photography.svg`,
+    image: photoport,
   },
   {
     title: "Team Dashboard",
@@ -43,7 +50,7 @@ const projects = [
     description: "Command line team management tool.",
     github: "https://github.com/btking1/Eng-Team-Profile-Generator",
     appLink: `https://github.com/btking1/Eng-Team-Profile-Generator`,
-    image: `/src/assets/projects/teamDash.svg`,
+    image: teamdash,
   },
   {
     title: "Tech Blog",
@@ -52,7 +59,7 @@ const projects = [
       "Blog based app that allows for creation of users and posts through RESTful API.",
     appLink: `https://tech-talk-mvc.herokuapp.com/login`,
     github: "https://github.com/btking1/Tech-Talk-blog",
-    image: `/src/assets/projects/techBlog.svg`,
+    image: techblog,
   },
 ];
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GitHub, LinkedIn } from "@material-ui/icons";
+import { GitHub} from "@material-ui/icons";
 import {
   Card,
   Typography,
