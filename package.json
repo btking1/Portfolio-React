@@ -1,11 +1,14 @@
 {
+  "homepage": "https://btking1.github.io//Portfolio-React",
   "name": "portfolio-react",
   "version": "0.1.0",
   "description": "The default template project for [nano-react-app](https://github.com/nano-react-app/nano-react-app).",
   "license": "MIT",
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -37,6 +40,5 @@
   "author": "",
   "bugs": {
     "url": "https://github.com/btking1/Portfolio-React/issues"
-  },
-  "homepage": "https://github.com/btking1/Portfolio-React#readme"
+  }
 }
