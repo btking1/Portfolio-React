@@ -4,7 +4,7 @@ import avatar from "../../../public/assets/avatar.png";
 
 function About() {
   return (
-    <Container className="about-container"
+    <Container maxWidth className="about-container"
       sx={{
         marginTop: "4%",
         marginBottom: "6%",

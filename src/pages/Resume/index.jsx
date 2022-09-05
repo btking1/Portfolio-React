@@ -3,23 +3,8 @@ import resumepage from "../../../src/projects/webdevresume.pdf";
 // import ViewOptions from "../../components/viewOptions";
 import { Grid, Box, Typography, Button, Container } from "@mui/material";
 
-/*>
---view resume function--
- 
-  -on click, set open to true
-  - when open is true, display the resume
-     - display the resume in a modal from component viewOptions
-*/
 
-// const viewResume = () => {
-//   const [open, setOpen] = useState(false);
-// }
-
-// const viewResume = (image) => {
-//   const [open, setOpen] = useState(false);
-// }
 function Resume() {
-  // const [openModal, setOpenModal] = useState(false)
 
   return (
     <Container
