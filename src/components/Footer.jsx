@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Box,
-  Typography,
-  Button,
-  ButtonGroup,
-} from "@mui/material";
+import { Container, Box, Typography, Button, ButtonGroup } from "@mui/material";
 import { GitHub, LinkedIn } from "@material-ui/icons";
 
 function Footer() {
@@ -24,10 +18,14 @@ function Footer() {
         minWidth: "100vh",
         margin: "0 auto",
         padding: "0px",
-        
+
         alignItems: "center",
 
         transition: "all 0.5s ease-in-out",
+        [`@media (min-width: ${830}px)`]: {
+          position: "unset",
+          maxWidth: "50px",
+        },
       }}
     >
       <Box
@@ -56,7 +54,8 @@ function Footer() {
             display: "flex",
           }}
         >
-          <Button onClick={() => window.open("https://github.com/btking1")}
+          <Button
+            onClick={() => window.open("https://github.com/btking1")}
             sx={{
               transition: "all 0.5s ease-in-out",
               "&:hover": {
@@ -66,7 +65,10 @@ function Footer() {
           >
             <GitHub />
           </Button>
-          <Button onClick={() => window.open("https://www.linkedin.com/in/booker-king-42493a247/")}
+          <Button
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/booker-king-42493a247/")
+            }
             sx={{
               transition: "all 0.5s ease-in-out",
               "&:hover": {
@@ -83,5 +85,3 @@ function Footer() {
 }
 
 export default Footer;
-
-

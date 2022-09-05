@@ -4,7 +4,7 @@ import avatar from "../../../public/assets/avatar.png";
 
 function About() {
   return (
-    <Container
+    <Container className="about-container"
       sx={{
         marginTop: "4%",
         marginBottom: "6%",
@@ -12,7 +12,7 @@ function About() {
       }}
     >
       <Container
-        maxWidth="lg"
+        maxWidth='lg'
         sx={{
           display: "flex",
           flexDirection: "row",
@@ -37,9 +37,11 @@ function About() {
             width: "100%",
             height: "100%",
             maxHeight: "60vh",
+
+            // add media query
           }}
         >
-          <img className="avatar" alt='avatar' src={avatar} />
+          <img className="avatar" alt="avatar" src={avatar} />
         </Box>
         <Box
           sx={{
@@ -52,6 +54,7 @@ function About() {
             variant="h3"
             fontWeight={1}
             padding={1}
+            className="about-text"
             sx={{
               fontSize: [".9rem", "1.2rem", "2.2rem", "2.5rem"],
               fontWeight: "200",

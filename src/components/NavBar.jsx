@@ -42,13 +42,12 @@ function NavBar() {
   `;
 
   return (
-    <Container
-      maxWidth="xl"
+    <Container maxWidth='xl'
       sx={{
         display: "flex",
         marginBottom: "2%",
-     
-        // [`@media (min-width: ${600}px)`]: {
+        marginTop: "2%",
+        // [`@media (maxWidth: ${850}px)`]: {
         //   position: 'static',
         //   backgroundColor: 'black',
         //   boxShadow: 'none',
