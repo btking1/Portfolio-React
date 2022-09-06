@@ -1,11 +1,15 @@
 import React from "react";
 import resumepage from "../../../src/projects/webdevresume.pdf";
-// import ViewOptions from "../../components/viewOptions";
 import { Grid, Box, Typography, Button, Container } from "@mui/material";
+import { theme } from "../../theme";
+import { makeStyles } from "@material-ui/core";
 
+const useStyle = makeStyles({
+  ...theme.myButton,
+});
 
 function Resume() {
-
+  const classes = useStyle();
   return (
     <Container
       sx={{
@@ -28,7 +32,7 @@ function Resume() {
               flexDirection: "column",
               justifyContent: "flex-start",
               alignItems: "flex-start",
-              backgroundColor: "primary.main",
+              // backgroundColor: "primary.main",
               padding: "5%",
               borderRadius: "10px",
               boxShadow: "0px 0px 10px rgba(0,0,0,0.5)",
@@ -39,6 +43,7 @@ function Resume() {
             <Typography
               variant="h4"
               fontSize={{ sm: "60px", md: "72px", lg: "82px" }}
+              color="black.main"
             >
               Front end:
             </Typography>
@@ -70,7 +75,6 @@ function Resume() {
               flexDirection: "column",
               justifyContent: "flex-start",
               alignItems: "flex-start",
-              backgroundColor: "primary.main",
               padding: "5%",
               borderRadius: "10px",
               boxShadow: "0px 0px 10px rgba(0,0,0,0.5)",
@@ -97,21 +101,19 @@ function Resume() {
             </Typography>
           </Box>
           <Button
+            className={classes.myButton}
             variant="contained"
             size="xl"
             sx={{
               marginTop: "10px",
               padding: "20px",
             }}
-            onClick={
-              () => window.open(resumepage, "_blank", 'fullscreen=true')
-            }
+            onClick={() => window.open(resumepage, "_blank", "fullscreen=true")}
           >
             View Resume
           </Button>
         </Grid>
         {/* {openModal && < ViewOptions closeModal={setOpenModal}  />} */}
-
       </Grid>
     </Container>
   );

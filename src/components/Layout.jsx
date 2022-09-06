@@ -8,8 +8,6 @@ const useStyle = makeStyles({
     margin: "0 auto",
     padding: "0px",
     display: "flex",
-
-   
   },
 });
 

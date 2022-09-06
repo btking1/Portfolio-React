@@ -43,7 +43,7 @@ ul {
     -mobile max-width: 425px
 */
 
-@media (max-width: 830px) {
+@media (max-width: 630px) {
   html {
     width: fit-content;
     /* display: flex;
@@ -71,3 +71,6 @@ ul {
     word-wrap: inherit;
   }
 }
+
+/* make transparent linear color gradient */
+

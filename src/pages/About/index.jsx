@@ -4,7 +4,7 @@ import avatar from "../../../public/assets/avatar.png";
 
 function About() {
   return (
-    <Container maxWidth className="about-container"
+    <Container className="about-container"
       sx={{
         marginTop: "4%",
         marginBottom: "6%",
@@ -12,7 +12,7 @@ function About() {
       }}
     >
       <Container
-        maxWidth='lg'
+        maxWidth='xl'
         sx={{
           display: "flex",
           flexDirection: "row",
@@ -34,9 +34,9 @@ function About() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            width: "100%",
-            height: "100%",
-            maxHeight: "60vh",
+            width: "70%",
+            height: "70%",
+            maxHeight: "50vh",
 
             // add media query
           }}

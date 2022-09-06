@@ -5,35 +5,35 @@ import { GitHub, LinkedIn } from "@material-ui/icons";
 function Footer() {
   return (
     <Container
-      maxWidth="xl"
+      maxWidth="md"
       sx={{
         marginTop: "20px",
         display: "flex",
         flexDirection: "row",
         justifyContent: "flex-end",
 
-        position: "sticky" && "fixed",
+        position: "fixed",
         bottom: "0",
         marginBottom: "5px",
-        minWidth: "100vh",
+        // minWidth: "100vh",
         margin: "0 auto",
         padding: "0px",
 
         alignItems: "center",
 
-        transition: "all 0.5s ease-in-out",
-        [`@media (min-width: ${830}px)`]: {
-          position: "unset",
-          maxWidth: "50px",
-        },
+        // transition: "all 0.5s ease-in-out",
+        // [`@media (min-width: ${830}px)`]: {
+        //   position: "unset",
+        //   maxWidth: "50px",
+        // },
       }}
     >
       <Box
         sx={{
           display: "flex",
-          minWidth: "7vw",
+          // minWidth: "7vw",
           minHeight: "5vh",
-          maxWidth: "30vw",
+          maxWidth: "10vw",
           padding: "5px",
         }}
       >

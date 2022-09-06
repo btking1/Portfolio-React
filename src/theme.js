@@ -1,6 +1,8 @@
-import {createTheme} from '@material-ui/core';
+import {createTheme } from '@material-ui/core';
+import {blue,red } from '@material-ui/core/colors';
 
-
+const Blue = blue[50];
+const Red  = red [50];
 
 export const theme = createTheme({
     palette: {
@@ -13,15 +15,15 @@ export const theme = createTheme({
       secondary: {
         main: "rgba(237,215,103,.75)",
       },
-      error: {
-        // main: red.A400,
-      },
       blueText: {
         main: "rgba(89,186,195,1)",
       },
+      black: {
+        main: "rgba(0,0,0,.95)",
+      }
     },
     myButton: {
-        backgroundColor: 'primary.other',
+        backgroundColor: Red,
         color: 'white',
         border: 'rgba(204, 232, 247, 1)',
     },
@@ -54,5 +56,17 @@ export const theme = createTheme({
       p: {
         fontFamily: "inter",
       },
+      fontFamily: [
+        'JetBrains Mono',
+        'Inter',
+        'Dosis',
+        'Montserrat',
+      ].join(','),
     },
   });
+
+
+   
+
+
+
