@@ -9,6 +9,7 @@ export const theme = createTheme({
       mode: "light",
       primary: {
         main: "rgba(204, 232, 247, 0.75)",
+        appBar: "rgba(204, 232, 247, 0.75)",
         other: "rgba(204, 232, 247, 1)",
         lightGreenText: "rgba(196,224,228,1)",
       },

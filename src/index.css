@@ -18,12 +18,11 @@ body {
 }
 
 /* Nav */
-.active {
+/* .active {
   color: rgba(237, 215, 103, 0.75);
-}
+} */
 a {
   text-decoration: none;
-  color: black;
 }
 
 /* .avatar {
@@ -44,19 +43,19 @@ ul {
 */
 
 @media (max-width: 630px) {
-  html {
-    width: fit-content;
+  /* html { */
+    /* width: fit-content; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
-  }
-  body {
-    width: fit-content;
-    height: fit-content;
+  /* } */
+  /* body { */
+    /* width: fit-content;
+    height: fit-content; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
-  }
+  /* } */
   .avatar {
     width: 200px;
     height: 200px;
