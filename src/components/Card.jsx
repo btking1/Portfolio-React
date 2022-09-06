@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GitHub} from "@material-ui/icons";
+import { GitHub } from "@material-ui/icons";
 import {
   Card,
   Typography,
@@ -8,6 +8,7 @@ import {
   CardMedia,
   IconButton,
 } from "@mui/material";
+import { Image } from "mui-image";
 
 // styled mui card
 const StyledCard = (props) => {
@@ -23,19 +24,22 @@ const StyledCard = (props) => {
 };
 
 export default function CardComponent(props) {
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
 
-  const handleMouseEnter = () => {
-    setHover(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setHover(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
-  function displayViewOption() {}
-  function hideViewOption() {}
+  // const handleMouseLeave = () => {
+  //   setHover(false);
+  // };
+  // function displayViewOption() {}
+  // function hideViewOption() {}
   return (
-    <StyledCard onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <StyledCard 
+    // onMouseEnter={handleMouseEnter} 
+    // onMouseLeave={handleMouseLeave}
+    >
       <CardHeader
         sx={{
           maxHeight: "40rem",
@@ -73,12 +77,11 @@ export default function CardComponent(props) {
       />
 
       <CardMedia
-        component="img"
-        height={hover ? "250px" : "200px"}
-        width={hover ? "300px" : "200px"}
-        onMouseEnter={displayViewOption()}
-        onMouseLeave={hideViewOption()}
-        onClick={() => window.open(props.appLink)}
+        // height={hover ? "250px" : "200px"}
+        // width={hover ? "300px" : "200px"}
+        // onMouseEnter={displayViewOption()}
+        // onMouseLeave={hideViewOption()}
+        // onClick={() => window.open(props.appLink)}
         sx={{
           zIndex: "-100",
           overflow: "auto",
@@ -94,9 +97,9 @@ export default function CardComponent(props) {
             cursor: "pointer",
           },
         }}
-        alt={props.title}
-        src={props.image}
-      />
+      >
+        <Image alt={props.title} src={props.image} />
+      </CardMedia>
       <CardContent>
         <Typography
           variant="body2"

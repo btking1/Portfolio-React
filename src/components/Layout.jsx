@@ -3,10 +3,16 @@ import React from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 
+// main layout style
 const useStyle = makeStyles({
- layout:{
-    display: "flex",
- },
+//  layout:{
+//     display: "flex",
+//     maxWidth: "100%",
+//     // nnth child
+//     "& > *:nth-child(3)": {
+//       justifyContent: "center",
+//     }
+//  },
  nav:{
   flex: 1,
  },
@@ -19,19 +25,21 @@ flex: 1,
 
 });
 
+
+// layout component
 export default function Layout({ children }) {
-  const classes = useStyle();
+  // const classes = useStyle();
 
   return (
     <div>
-      <Grid className={classes.layout} container direction="column">
-        <Grid className={classes.nav} item sm={12}>
+      <Grid container direction="column">
+        <Grid item xs={12}>
           <NavBar />
         </Grid>
-        <Grid className={classes.page} item sm={12}>
+        <Grid item xs={12}>
           {children}
         </Grid>
-        <Grid className={classes.footer} item sm={12}>
+        <Grid item xs={12}>
           <Footer />
         </Grid>
       </Grid>

@@ -17,7 +17,6 @@ function Resume() {
         justifyContent: "center",
         alignItems: "center",
         width: "fit-content",
-        minWidth: "500px",
         marginTop: "10%",
         marginBottom: "10%",
       }}
@@ -27,7 +26,6 @@ function Resume() {
           <Box
             sx={{
               height: "fit-content",
-              maxWidth: "330px",
               display: "flex",
               flexDirection: "column",
               justifyContent: "flex-start",

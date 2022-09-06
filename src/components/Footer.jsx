@@ -6,7 +6,6 @@ function Footer() {
   return (
     <Container
       maxWidth="md"
-      position="inherit"
       sx={{
         zIndex: "100",
         marginTop: "20px",
