@@ -6,19 +6,22 @@ function Footer() {
   return (
     <Container
       maxWidth="md"
+      position="inherit"
       sx={{
+        zIndex: "100",
         marginTop: "20px",
         display: "flex",
         flexDirection: "row",
         justifyContent: "flex-end",
-
-        position: "fixed",
+        // transform: 'scaleX(2%)',
+        
+    
         bottom: "0",
         marginBottom: "5px",
         // minWidth: "100vh",
         margin: "0 auto",
         padding: "0px",
-
+        // transform: 'scaleX(150%)',
         alignItems: "center",
 
         // transition: "all 0.5s ease-in-out",

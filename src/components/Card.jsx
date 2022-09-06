@@ -80,7 +80,8 @@ export default function CardComponent(props) {
         onMouseLeave={hideViewOption()}
         onClick={() => window.open(props.appLink)}
         sx={{
-          overflow: "hidden",
+          zIndex: "-100",
+          overflow: "auto",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

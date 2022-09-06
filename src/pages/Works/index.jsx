@@ -86,6 +86,7 @@ function Works() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          zIndex: "-100",
         }}
         maxWidth="lg"
       >
@@ -116,6 +117,7 @@ function Works() {
           ))}
         </Grid>
       </Container>
+      {/* <div style="clear: both;" /> */}
     </>
   );
 }
