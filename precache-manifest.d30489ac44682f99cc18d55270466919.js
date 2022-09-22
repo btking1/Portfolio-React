@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "691645cea1d771106deb",
-    "url": "/Portfolio-React/static/css/main.455be6a8.chunk.css"
+    "revision": "9c815a954756aca1e8c8",
+    "url": "/Portfolio-React/static/css/main.6973b0f8.chunk.css"
   },
   {
-    "revision": "691645cea1d771106deb",
-    "url": "/Portfolio-React/static/js/main.691645ce.chunk.js"
+    "revision": "9c815a954756aca1e8c8",
+    "url": "/Portfolio-React/static/js/main.9c815a95.chunk.js"
   },
   {
-    "revision": "750402d96474dc3a880c",
-    "url": "/Portfolio-React/static/js/1.750402d9.chunk.js"
+    "revision": "a622a3dc76bed7937afb",
+    "url": "/Portfolio-React/static/js/1.a622a3dc.chunk.js"
   },
   {
     "revision": "d68143df2e3e8e9095f5",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/Portfolio-React/static/media/avatar.2afc1d3e.png"
   },
   {
-    "revision": "9883c2308608751e971c6dfa080b5f9c",
-    "url": "/Portfolio-React/static/media/webdevresume.9883c230.pdf"
+    "revision": "4cc1ac36352f15f1e018e6e744a10da2",
+    "url": "/Portfolio-React/static/media/webdevresume.4cc1ac36.pdf"
   },
   {
     "revision": "68a5a6c73f554bb6704c1c665ce3f4ea",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/Portfolio-React/static/media/vorderrhein.a208e256.svg"
   },
   {
-    "revision": "a37b47c1ea512b77e18761333dad30d4",
+    "revision": "8e833847d4db8ebf9f798a2cd108952f",
     "url": "/Portfolio-React/index.html"
   }
 ];
