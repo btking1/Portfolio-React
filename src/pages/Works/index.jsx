@@ -1,5 +1,4 @@
 import React from "react";
-// import "./index.css";
 import { Container, Grid } from "@mui/material";
 import StyledCard from "../../components/Card";
 import imaginai from "../../../src/projects/imagineai.svg";
@@ -15,7 +14,8 @@ const projects = [
     subheader: "JS, React, Node, Express, MySQL",
     description:
       "Image AI is a web application that uses machine learning to classify images of animals and objects.",
-    github: `https://github.com/FredElick/project-2`,
+    appLink: "https://project2-app-btking.herokuapp.com/",
+    github: `https://github.com/btking1/project-2`,
     image: imaginai,
   },
 
@@ -78,45 +78,21 @@ makeKey();
 
 function Works() {
   return (
-    <>
-      <Container
-        sx={{
-          marginTop: "5%",
-          marginBottom: "5%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        maxWidth="lg"
-      >
-        <Grid
-          container
-          spacing={2}
-          rowSpacing={4}
-          direction="row"
-          sx={{
-            display: "flex",
-            width: "100%",
-            maxWidth: "100%",
-            maxHeight: "100%",
-          }}
-        >
-          {projects.map((project, key) => (
-            <Grid item key={key} sm={12} md={6} lg={4} xl={4}>
-              <StyledCard
-                key={key}
-                title={project.title}
-                subheader={project.subheader}
-                description={project.description}
-                github={project.github}
-                image={project.image}
-                appLink={project.appLink}
-              />
-            </Grid>
-          ))}
+    <Grid container spacing={2} direction="row" sx={{}}>
+      {projects.map((project, key) => (
+        <Grid item key={key} sm={12} md={6} lg={4} xl={4}>
+          <StyledCard
+            key={key}
+            title={project.title}
+            subheader={project.subheader}
+            description={project.description}
+            github={project.github}
+            image={project.image}
+            appLink={project.appLink}
+          />
         </Grid>
-      </Container>
-    </>
+      ))}
+    </Grid>
   );
 }
 

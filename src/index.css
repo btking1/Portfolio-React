@@ -1,7 +1,7 @@
-html {
+/* html {
   padding: 0;
   margin: 0;
-}
+} */
 body {
   background-image: url(../public/assets/bgc-contact/vorderrhein.svg);
 
@@ -17,52 +17,19 @@ body {
   z-index: -6;
 }
 
-/* Nav */
-.active {
-  color: rgba(237, 215, 103, 0.75);
-}
 a {
   text-decoration: none;
-  color: black;
 }
 
-/* .avatar {
-  width: 55vh;
-  height: 58vh;
-} */
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
-/* add media query for :
-    - large tablet (992px) and up
-    -tablets max-width: 768px
-    -mobile max-width: 425px
-*/
-
-@media (max-width: 830px) {
-  html {
-    width: fit-content;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  }
-  body {
-    width: fit-content;
-    height: fit-content;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  }
-  .avatar {
-    width: 200px;
-    height: 200px;
-  }
+/* 
+@media (max-width: 630px) {
   .about-container {
-    max-width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,4 +37,5 @@ ul {
   .about-text {
     word-wrap: inherit;
   }
-}
+} */
+
