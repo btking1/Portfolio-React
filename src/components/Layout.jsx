@@ -4,45 +4,46 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 
 // main layout style
-const useStyle = makeStyles({
-//  layout:{
-//     display: "flex",
-//     maxWidth: "100%",
-//     // nnth child
-//     "& > *:nth-child(3)": {
-//       justifyContent: "center",
-//     }
-//  },
- nav:{
-  flex: 1,
- },
- page:{
-flex: 3,
- },
-  footer:{
-flex: 1,
+const useStyle = makeStyles((theme) => ({
+
+  // core: {
+  //   border: "1px solid black",
+  // },
+  nav: {
+    // flex: 1,
+    marginBottom: theme.spacing(2),
   },
-
-});
-
+  page: {
+    display: "flex",
+    justifyContent: "center",
+    // width: "100%",
+    
+  
+  },
+  footer: {
+    [theme.breakpoints.down("sm")]: {
+visibility: "hidden"
+    },
+  },
+}));
 
 // layout component
-export default function Layout({ children }) {
-  // const classes = useStyle();
+export default function Layout({ children,  theme }) {
+  const classes = useStyle();
 
   return (
-    <div>
-      <Grid container direction="column">
-        <Grid item xs={12}>
+    // <div className={classes.core} >
+      <Grid container spacing={10} wrap='nowrap'direction="column" className={classes.core}>
+        <Grid className={classes.nav} draggable='false' item xs={12}>
           <NavBar />
         </Grid>
-        <Grid item xs={12}>
+        <Grid className={classes.page} item xs={12} >
           {children}
         </Grid>
         <Grid item xs={12}>
-          <Footer />
+          <Footer className={classes.footer} />
         </Grid>
       </Grid>
-    </div>
+    // </div>
   );
 }

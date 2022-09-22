@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
 function NavBar() {
   const classes = useStyles();
   return (
-    <AppBar color="transparent" className={classes.navContainer}>
+    <AppBar color="transparent" position="static" className={classes.navContainer}>
       <NavLink key="5" to="/">
         <Box
           sx={{

@@ -8,9 +8,19 @@ import {
   Typography,
 } from "@mui/material";
 
+function handleSubmit(event) {
+  // reload page to clear form
+  alert("submitted!");
+  window.location.reload();
+}
 const Contact = () => {
   return (
-    <Container>
+    <form
+      method="post"
+      // accept='application/vnd.pageclip.v1+json'
+      className="pageclip-form"
+      action="https://send.pageclip.co/ba294F9sjQ7FkNDk7hdZIyDRjjNcVokD/Portfolio-contact"
+    >
       <Grid
         container
         spacing={3}
@@ -18,10 +28,7 @@ const Contact = () => {
           justifyContent: "center",
           alignItems: "center",
           maxWidth: "600px",
-          margin: "0 auto",
-          marginTop: "6%",
-          marginBottom: "15%",
-          padding: "0px",
+          padding: "1rem",
         }}
       >
         <Typography
@@ -37,9 +44,9 @@ const Contact = () => {
             <TextField
               className="name"
               id="outlined-basic"
-              label="Name"
+              label="name"
               variant="outlined"
-              name="name"
+              // value='name[input]'
               style={{ minwidth: "300", width: "100%" }}
             />
           </Box>
@@ -93,12 +100,13 @@ const Contact = () => {
               color: "white",
               "&:hover": {},
             }}
+            onClick={handleSubmit}
           >
             Submit
           </Button>
         </Grid>
       </Grid>
-    </Container>
+    </form>
   );
 };
 

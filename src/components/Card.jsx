@@ -28,6 +28,7 @@ export default function CardComponent(props) {
 
   // const handleMouseEnter = () => {
   //   setHover(true);
+  //   return `hover : '120%'`;
   // };
 
   // const handleMouseLeave = () => {
@@ -36,13 +37,15 @@ export default function CardComponent(props) {
   // function displayViewOption() {}
   // function hideViewOption() {}
   return (
-    <StyledCard 
-    // onMouseEnter={handleMouseEnter} 
-    // onMouseLeave={handleMouseLeave}
+    <StyledCard
+      // onMouseEnter={handleMouseEnter}
+      // onMouseLeave={handleMouseLeave}
+      // height={hover ? "250px" : "200px"}
+      // width={hover ? "300px" : "200px"}
     >
       <CardHeader
         sx={{
-          maxHeight: "40rem",
+          // maxHeight: "40rem",
           lineHeight: "2.5rem",
         }}
         title={
@@ -77,13 +80,13 @@ export default function CardComponent(props) {
       />
 
       <CardMedia
-        // height={hover ? "250px" : "200px"}
-        // width={hover ? "300px" : "200px"}
+        // height={}
+        // width={}
         // onMouseEnter={displayViewOption()}
         // onMouseLeave={hideViewOption()}
-        // onClick={() => window.open(props.appLink)}
+        onClick={() => window.open(props.appLink)}
         sx={{
-          zIndex: "-100",
+          // zIndex: "-100",
           overflow: "auto",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -95,6 +98,8 @@ export default function CardComponent(props) {
 
           "&:hover": {
             cursor: "pointer",
+            // height: "120%",
+            // width: "120%",
           },
         }}
       >

@@ -11,18 +11,13 @@ const useStyle = makeStyles({
 function Resume() {
   const classes = useStyle();
   return (
-    <Container
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        width: "fit-content",
-        marginTop: "10%",
-        marginBottom: "10%",
-      }}
-    >
-      <Grid container rowSpacing={2} columnSpacing={{ xs: 3, sm: 3, lg: 7 }}>
-        <Grid item xs={6} lg={6}>
+      <Grid container direction='row' sx={{
+        // display: "flex",
+        // justifyContent: "center",
+        // border: "1px solid black",
+       maxWidth: "90vw",
+      }} spacing={2}>
+        <Grid item xs={12} lg={6}>
           <Box
             sx={{
               height: "fit-content",
@@ -61,7 +56,7 @@ function Resume() {
         </Grid>
         <Grid
           item
-          xs={6}
+          xs={12}
           lg={6}
           sx={{ display: "flex", flexDirection: "column" }}
         >
@@ -69,7 +64,7 @@ function Resume() {
             sx={{
               height: "fit-content",
               display: "flex",
-              maxWidth: "330px",
+              // maxWidth: "330px",
               flexDirection: "column",
               justifyContent: "flex-start",
               alignItems: "flex-start",
@@ -113,7 +108,7 @@ function Resume() {
         </Grid>
         {/* {openModal && < ViewOptions closeModal={setOpenModal}  />} */}
       </Grid>
-    </Container>
+    // </Container>
   );
 }
 
