@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "1713d5615069579e1ff5",
+    "revision": "5228be41865b862c702e",
     "url": "/Portfolio-React/static/css/main.6973b0f8.chunk.css"
   },
   {
-    "revision": "1713d5615069579e1ff5",
-    "url": "/Portfolio-React/static/js/main.1713d561.chunk.js"
+    "revision": "5228be41865b862c702e",
+    "url": "/Portfolio-React/static/js/main.5228be41.chunk.js"
   },
   {
     "revision": "a622a3dc76bed7937afb",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/Portfolio-React/static/media/notesonline.afb3fa33.svg"
   },
   {
-    "revision": "750156dc834e6ef8d2322fb5d9d43b0d",
-    "url": "/Portfolio-React/static/media/photography.750156dc.svg"
+    "revision": "163307238e3af7632eb31a9f966b31be",
+    "url": "/Portfolio-React/static/media/resumeBuilder.16330723.jpg"
   },
   {
     "revision": "815ab7228a9a4e2495681324e97584f4",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/Portfolio-React/static/media/vorderrhein.a208e256.svg"
   },
   {
-    "revision": "e928acdf7607f9415b10b234200fc90c",
+    "revision": "1f06bd0605582f5d8dbd21d0c2572100",
     "url": "/Portfolio-React/index.html"
   }
 ];
